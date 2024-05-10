@@ -1,5 +1,5 @@
 use std::net::{TcpListener, TcpStream};
-use std::io::{self, BufReader, BufRead, Write};
+use std::io::{BufReader, BufRead, Write};
 use std::fs;
 use std::thread;
 use std::time::Duration;

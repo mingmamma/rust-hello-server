@@ -178,7 +178,7 @@ mod tests {
     
     #[test]
     fn thread_pool_integration() {
-        let mut test_counter = Arc::new(Mutex::new(0));
+        let test_counter = Arc::new(Mutex::new(0));
         {
             let test_thread_pool = ThreadPool::build(4);
             for _ in 0..5 {
